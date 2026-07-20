@@ -1144,7 +1144,6 @@
         "Udział w badaniu zajmuje około 30 minut.",
         "Udział w badaniu jest dobrowolny. <strong>W każdej chwili mogą Państwo zrezygnować z udziału w badaniu bez podawania przyczyny.</strong>",
         "<strong>Badanie jest anonimowe</strong>, co oznacza, że nie są zbierane dane pozwalające na identyfikację uczestników. Zebrane dane: będą wykorzystywane wyłącznie do celów naukowych, zostaną opracowane w formie zbiorczej, nie będą przypisywane do konkretnych osób. Po wysłaniu ankiety nie ma możliwości wycofania danych, ponieważ nie można ich powiązać z konkretnym uczestnikiem.",
-        "Jeśli zdecydujesz się wziąć udział w tym badaniu, efekty tej procedury będą podobne do spędzenia 30 minut przed ekranem komputera.",
         "Za udział w badaniu nie jest przewidziane wynagrodzenie.",
         "W przypadku pytań dotyczących badania można skontaktować się z badaczem pod adresem e-mail: <strong>dszczupak@st.swps.edu.pl</strong>. Promotorką pracy jest dr Hanna Kucwaj, e-mail: <strong>hkucwaj@swps.edu.pl</strong>.",
         "Dziękuję za udział.",
@@ -1257,7 +1256,7 @@
         {
           id: "logic_2",
           title: "Zadanie 2",
-          prompt: "Wskaż brakującą liczbę w sekwencji: 4, 9, 16, 25, 36, ?",
+          prompt: "Która liczba powinna znaleźć się w miejscu znaku zapytania? 4, 9, 16, 25, 36, ?",
           options: [
             { value: "A", label: "45" },
             { value: "B", label: "47" },
@@ -1855,7 +1854,7 @@
               ${STEP_DEFS.map((step, index) => renderStepItem(step, index)).join("")}
             </div>
             <div class="sidebar-meta">
-              <button class="reset-icon" type="button" onclick="resetAllData()" title="Rozpocznij ankietę od nowa" aria-label="Rozpocznij ankietę od nowa">↺</button>
+              <button class="reset-icon" type="button" onclick="resetAllData()" title="Rozpocznij ankietę od nowa" aria-label="Rozpocznij ankietę od nowa" style="display:none;">↺</button>
             </div>
           </aside>
           <section class="panel">
